@@ -1,3 +1,4 @@
 <resources>
-    <string name="app_name">BankSephora</string>
+    <string name="app_name">Bank Sephora</string>
+    <string name="appBank">BANK SEPHORA</string>
 </resources>
