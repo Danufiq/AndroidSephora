@@ -18,6 +18,15 @@
         <item name="windowActionBar">false</item>
         <item name="actionMenuTextColor">@android:color/white</item>
         <item name="android:actionMenuTextColor">@android:color/white</item>
-<!--        <item name="titleTextColor">@color/colorPrimary</item>-->
+        <!--        <item name="titleTextColor">@color/colorPrimary</item>-->
     </style>
+
+    <style name="Theme.BankSephora.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="Theme.BankSephora.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="Theme.BankSephora.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
 </resources>
