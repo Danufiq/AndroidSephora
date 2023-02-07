@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools">
+    xmlns:tools="http://schemas.android.com/tools" >
 
     <application
         android:allowBackup="true"
@@ -13,12 +13,28 @@
         android:theme="@style/Theme.BankSephora"
         tools:targetApi="31">
         <activity
+            android:name=".gabriel.screen.examplescreen.ActivityGabb"
+            android:exported="true" />
+        <activity
+            android:name=".gabriel.screen.exampleonboarding.OnBoardingGabbActivity"
+            android:exported="true"
+            android:label="@string/title_activity_on_boarding_gabb"
+            android:theme="@style/Theme.BankSephora.NoActionBar" >
+        <intent-filter>
+            <action android:name="android.intent.action.MAIN" />
+
+            <category android:name="android.intent.category.LAUNCHER" />
+        </intent-filter>
+        </activity>
+
+        <activity
             android:name=".example.screen.examplescreen.ExampleActivityName"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
+
         <activity
             android:name=".example.screen.exampleonboarding.ExampleOnBoardingActivity"
             android:exported="false"
@@ -28,16 +44,18 @@
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
+
         <activity
             android:name=".main.screen.onboarding.OnBoardingActivity"
             android:exported="true"
             android:theme="@style/AppTheme.NoActionbar">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
+<!--            <intent-filter>-->
+<!--                <action android:name="android.intent.action.MAIN" />-->
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
+<!--                <category android:name="android.intent.category.LAUNCHER" />-->
+<!--            </intent-filter>-->
         </activity>
+
         <activity
             android:name=".MainActivity"
             android:exported="true">

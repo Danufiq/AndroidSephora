@@ -8,6 +8,16 @@
     <string name="next">Next</string>
     <string name="previous">Previous</string>
 
-    <string name="hello_first_fragment">Hello first fragment</string>
-    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="title_activity_on_boarding_gabb">OnBoardingGabbActivity</string>
+    <string name="subtitel1">Kemudahan Dalam Genggaman</string>
+    <string name="isi1">Hanya dengan 3 langkah registrasi, nikmati segala
+        kemudahan dalam bertransaksi</string>
+
+    <string name="subtitel2">Transaksi Internasional</string>
+    <string name="isi2">Nikmati kemudahan bertransaksi di seluruh dunia
+        dengan kartu VISA dan Mastercard </string>
+
+    <string name="subtitel3">Keamanan Dalam Bertransaksi</string>
+    <string name="isi3">Kemanan dalam bertransaksi Anda merupakan
+        prioritas bagi kami</string>
 </resources>
