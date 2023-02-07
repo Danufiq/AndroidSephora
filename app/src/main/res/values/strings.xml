@@ -8,6 +8,7 @@
     <string name="next">Next</string>
     <string name="previous">Previous</string>
 
+<<<<<<< HEAD
     <string name="title_activity_on_boarding_gabb">OnBoardingGabbActivity</string>
     <string name="subtitel1">Kemudahan Dalam Genggaman</string>
     <string name="isi1">Hanya dengan 3 langkah registrasi, nikmati segala
@@ -20,4 +21,10 @@
     <string name="subtitel3">Keamanan Dalam Bertransaksi</string>
     <string name="isi3">Kemanan dalam bertransaksi Anda merupakan
         prioritas bagi kami</string>
+=======
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+>>>>>>> f9bc3db083a44ba34c2ae796aa72d512d774499e
 </resources>
