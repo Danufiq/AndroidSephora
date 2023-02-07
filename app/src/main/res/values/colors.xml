@@ -8,4 +8,9 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
     <color name="white_grey">#E1E8F6</color>
+
+
+    //color uswa
+    //background: #2F82FF;
+    <color name="text_bank_uswa">#2F82FF</color>
 </resources>
