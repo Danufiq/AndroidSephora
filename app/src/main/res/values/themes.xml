@@ -29,4 +29,9 @@
     <style name="Theme.BankSephora.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
 
     <style name="Theme.BankSephora.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="DialogSlideAnimFullWidth" parent="Base.Theme.AppCompat.Light.Dialog.Alert">
+        <item name="windowFixedWidthMajor">90%</item>
+        <item name="windowFixedWidthMinor">90%</item>
+    </style>
 </resources>

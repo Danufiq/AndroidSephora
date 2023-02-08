@@ -6,6 +6,8 @@ import android.util.Log
 import com.example.banksephora.R
 import com.example.banksephora.databinding.ActivityMainBinding
 import com.example.banksephora.databinding.ActivityOnBoardingBinding
+import com.example.banksephora.main.screen.login.LoginActivity
+import com.example.banksephora.main.shared.ui.showDialog
 
 class OnBoardingActivity : AppCompatActivity() {
     private lateinit var binding: ActivityOnBoardingBinding
@@ -27,10 +29,12 @@ class OnBoardingActivity : AppCompatActivity() {
 
     private fun initView(){
         binding.btnNext.setOnClickListener{
-            if (countFrame < 4) {
+            if (countFrame < 3) {
+                showDialog("test onboardiang dialog")
                 countFrame = countFrame+1
                 this.nextFragment()
             }else {
+                startActivity(LoginActivity.newIntent(this))
                 Log.d("","next Screen")
             }
         }
@@ -45,7 +49,7 @@ class OnBoardingActivity : AppCompatActivity() {
 
     private fun nextFragment(){
 
-        if (countFrame < 4){
+//        if (countFrame < 3){
             when (countFrame){
                 2 -> {
                     fragmentOnBoardingTwo = OnBoardingTwoView.newInstance()
@@ -62,7 +66,7 @@ class OnBoardingActivity : AppCompatActivity() {
                 }
                 else -> { Log.d("OnBoardingActivity","else")}
             }
-        }
+//        }
 
 
     }

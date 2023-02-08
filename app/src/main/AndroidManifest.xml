@@ -53,6 +53,14 @@
             <!-- </intent-filter> -->
         </activity>
         <activity
+            android:name=".main.screen.login.LoginActivity"
+            android:exported="false"
+            android:theme="@style/AppTheme.NoActionbar">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
             android:name=".example.screen.examplescreen.ExampleActivityName"
             android:exported="false">
             <meta-data
