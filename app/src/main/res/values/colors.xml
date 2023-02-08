@@ -11,6 +11,9 @@
 
 
     //color uswa
-    //background: #2F82FF;
+    <color name="back_onboard">#F3F7FD</color>
     <color name="text_bank_uswa">#2F82FF</color>
+    <color name="text_content1.1">#464455</color>
+    <color name="text_content1.2">#727FA3</color>
+    <color name="color_editlogin">#F3F7FD</color>
 </resources>
