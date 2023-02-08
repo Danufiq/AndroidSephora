@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".gabriel.screen.exampleonboarding.OnBoardingGabbMainActivityTiga">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="240dp"
+            android:layout_height="240dp"
+            android:layout_marginStart="75dp"
+            android:layout_marginEnd="76dp"
+            android:src="@drawable/group_7130"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/judulTiga"
+            android:layout_width="267dp"
+            android:layout_height="23dp"
+            android:layout_marginStart="72dp"
+            android:layout_marginTop="21dp"
+            android:layout_marginEnd="72dp"
+            android:fontFamily="sans-serif-black"
+            android:gravity="center_horizontal|center_vertical"
+            android:lineSpacingExtra="5sp"
+            android:text="@string/subtitel3"
+            android:textColor="#464455"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView3" />
+
+        <TextView
+            android:id="@+id/isiTiga"
+            android:layout_width="335dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="38dp"
+            android:layout_marginTop="11dp"
+            android:layout_marginEnd="38dp"
+            android:fontFamily="sans-serif-medium"
+            android:gravity="center_horizontal|center_vertical"
+            android:lineSpacingExtra="4sp"
+            android:text="@string/isi3"
+            android:textColor="#464455"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/judulTiga" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>
