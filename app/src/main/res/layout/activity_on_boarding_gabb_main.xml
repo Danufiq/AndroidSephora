@@ -17,8 +17,8 @@
 
         <TextView
             android:id="@+id/bank_sephor"
-            android:layout_width="134dp"
-            android:layout_height="26dp"
+            android:layout_width="174dp"
+            android:layout_height="28dp"
             android:layout_marginStart="4dp"
             android:fontFamily="sans-serif-black"
             android:gravity="center_horizontal|center_vertical"
@@ -29,7 +29,7 @@
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintRight_toLeftOf="@+id/imageViewId"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"/>
+            app:layout_constraintTop_toTopOf="parent" />
 
         <ImageView
             android:id="@+id/imageViewId"
