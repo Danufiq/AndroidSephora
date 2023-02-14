@@ -1,4 +1,4 @@
-package com.example.banksephora.uswa.screen
+package com.example.banksephora.uswa.screen.onboarding
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
@@ -6,9 +6,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import com.example.banksephora.R
-import com.example.banksephora.databinding.FragmentOnBoardingOneViewBinding
 import com.example.banksephora.databinding.FragmentOnBoardingOneViewUswaBinding
-import com.example.banksephora.main.screen.onboarding.OnBoardingOneView
 
 
 class OnBoardingOneView_uswa : Fragment() {

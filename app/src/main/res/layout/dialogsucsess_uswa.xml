@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:ignore="MissingDefaultResource">
+    
+    <androidx.cardview.widget.CardView
+        android:layout_width="335dp"
+        android:layout_height="343dp"
+        app:cardCornerRadius="15dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:ignore="MissingConstraints"
+        >
+        
+        <TextView
+            android:id="@+id/titledialog"
+            android:layout_width="305dp"
+            android:layout_height="26dp"
+            android:textSize="18dp"
+            android:text="Berhasil!"
+            android:layout_marginTop="18dp"
+            android:layout_marginLeft="15dp"
+            android:textAlignment="center"
+            android:textColor="#2B2F3C"
+            />
+        
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="335dp"
+            android:layout_height="278dp"
+            android:layout_marginTop="62dp"
+            >
+            
+            <ImageView
+                android:id="@+id/titleimage"
+                android:layout_width="81dp"
+                android:layout_height="81dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="127dp"
+                android:layout_marginRight="127dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:background="@drawable/check_success_uswa"
+                />
+            
+            
+            <TextView
+                android:id="@+id/textviewsuccess"
+                android:layout_width="295dp"
+                android:layout_height="80dp"
+                android:text="Selamat! Akun Anda telah berhasil
+                terdaftar di akun Sephora Banking.
+                Silakan menikmati semua fitur Sephora Banking."
+                android:textAlignment="center"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:textSize="14dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_marginTop="111dp"
+                />
+            
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn"
+                android:layout_width="305dp"
+                android:layout_height="40dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_marginTop="226dp"
+                android:text="Tutup"
+                android:textColor="@color/white"
+                android:background="@drawable/general_bg_button"
+                />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnGagal"
+                android:layout_width="305dp"
+                android:layout_height="40dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_marginTop="226dp"
+                android:text="Coba Lagi"
+                android:textColor="@color/white"
+                android:background="@drawable/general_bg_button"
+                />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

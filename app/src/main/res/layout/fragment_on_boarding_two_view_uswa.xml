@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    tools:context=".uswa.screen.onboarding.OnBoardingOneView_uswa">
+    tools:context=".uswa.screen.onboarding.OnBoardingTwoView_uswa">
 
     <!-- TODO: Update blank fragment layout -->
 
@@ -16,7 +16,7 @@
             android:id="@+id/imageView1"
             android:layout_width="240dp"
             android:layout_height="240dp"
-            android:background="@drawable/imagecontent1_1_uswa"
+            android:background="@drawable/imagecontent2_1_uswa"
             android:foregroundGravity="center"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="parent"
@@ -31,11 +31,11 @@
             app:layout_constraintTop_toBottomOf="@+id/imageView1"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            android:src="@drawable/imagecontent1_2_uswa"
+            android:src="@drawable/imagecontent2_2_uswa"
             />
         <TextView
             android:id="@+id/textView1"
-            android:text="@string/content1.1"
+            android:text="@string/content2.1"
             android:layout_width="253dp"
             android:layout_height="26dp"
             android:layout_marginTop="66dp"
@@ -51,7 +51,7 @@
             />
         <TextView
             android:id="@+id/textView2"
-            android:text="@string/content1.2"
+            android:text="@string/content2.2"
             android:layout_width="335dp"
             android:layout_height="40dp"
             android:layout_marginTop="10dp"
