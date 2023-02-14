@@ -1,11 +1,13 @@
 package com.example.banksephora.gabriel.screen.exampleonboarding
 
+import android.content.Context
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
 import com.example.banksephora.R
 import com.example.banksephora.databinding.ActivityOnBoardingBinding
+import com.example.banksephora.databinding.ActivityOnBoardingGabbLoginBinding
 import com.example.banksephora.databinding.ActivityOnBoardingGabbMainBinding
 import com.example.banksephora.main.screen.onboarding.OnBoardingOneView
 import com.example.banksephora.main.screen.onboarding.OnBoardingThreeView
@@ -20,10 +22,17 @@ class OnBoardingGabbMainActivity : AppCompatActivity() {
     var countFrame = 1
     val ft = supportFragmentManager.beginTransaction()
 
+    companion object {
+        fun newIntent(context: Context) : Intent {
+            val intent = Intent(context, ActivityOnBoardingGabbMainBinding::class.java)
+            return intent
+        }
+    }
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityOnBoardingGabbMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
+        binding.header.setTitle("BANK SEPHORA")
         initView()
         initFragment()
     }

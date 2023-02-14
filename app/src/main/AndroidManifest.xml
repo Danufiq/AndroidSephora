@@ -13,10 +13,13 @@
         android:theme="@style/Theme.BankSephora"
         tools:targetApi="31">
         <activity
+            android:name=".HeaderGabbView"
+            android:exported="false" />
+        <activity
             android:name=".gabriel.screen.exampleonboarding.OnBoardingGabbLoginActivity"
             android:exported="true"
             android:label="@string/title_activity_on_boarding_gabb_login"
-            android:theme="@style/Theme.BankSephora.NoActionBar"/>
+            android:theme="@style/Theme.BankSephora.NoActionBar" />
         <activity
             android:name=".gabriel.screen.exampleonboarding.OnBoardingGabbMainActivity"
             android:exported="true"

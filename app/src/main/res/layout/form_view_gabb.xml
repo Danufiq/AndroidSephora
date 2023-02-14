@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:backgroundTint="#000000"
+    android:foregroundTint="#000000">
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/ketikUsername"
+            android:layout_width="341dp"
+            android:layout_height="49dp"
+            android:drawableEnd="@drawable/mata"
+            android:hint="Username"
+            android:textColorHint="#c1c4c9"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

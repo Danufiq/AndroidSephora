@@ -20,6 +20,7 @@ class OnBoardingGabbMainActivityTiga : Fragment() {
         binding = FragmentOnBoardingGabbMainActivityTigaBinding.bind(inflater.inflate(R.layout.fragment_on_boarding_gabb_main_activity_tiga, container, false))
 
         initView()
+
         return binding.root
     }
 

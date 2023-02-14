@@ -25,6 +25,10 @@
         prioritas bagi kami</string>
 
     <string name="pengantarLogin">Silahkan masukkan username dan password terdaftar Anda untuk melakukan login</string>
-    <string name="forget">Lupa Username / Password?</string>
+    <string name="forget">Selamat! Akun Anda telah berhasil
+terdaftar di akun Sephora Banking.
+Silakan menikmati semua fitur Sephora Banking.</string>
+    <string name="gagal">Akun Anda gagal terdaftar di akun Sephora Banking. Silakan coba lagi.</string>
+
     <string name="kataPenutup">PT Bank Sephora Indonesia ("Bank Sephora") telah berlisensi oleh Bank Indonsia dan diawasi oleh Otoritas Jasa Keuangan (OJK) serta merupakan peserta dari Lembaga Penjamin Simpanan (LPS).</string>
 </resources>
