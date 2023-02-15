@@ -24,8 +24,8 @@ class LoginPresenterGabb (private val context: Context) : BasePresenterGabb<Logi
             view?.gagalLogin("username atau password tidak boleh kosong")
             return
         }
-
-        if (username == "user1" && password == "pass1"){
+        if (username.equals("user1", ignoreCase = true) && password.equals("pass1")){
+        //if (username == "user1" && password == "pass1"){
             view?.berhasilLogin()
         }else{
             view?.gagalLogin("username atau password yang anda masukkan salah")

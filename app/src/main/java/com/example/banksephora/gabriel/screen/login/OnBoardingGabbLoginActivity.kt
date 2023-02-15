@@ -33,7 +33,6 @@ class OnBoardingGabbLoginActivity : AppCompatActivity(), LoginInterfaceGabb{
         binding.username.setTipeInput()
         binding.password.setHint("Password")
         binding.password.setTipeInput(true)
-        showDialogSukses()
         binding.loginButton.setOnClickListener{
             presenter.login(binding.username.getEditText().text.toString(), binding.password.getEditText().text.toString())
         }
