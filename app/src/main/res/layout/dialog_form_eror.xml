@@ -39,7 +39,7 @@
             app:layout_constraintTop_toTopOf="parent"/>
 
         <TextView
-            android:id="@+id/kalimat"
+            android:id="@+id/kalimatGagal"
             android:layout_width="350dp"
             android:layout_height="wrap_content"
             android:text="@string/gagal"

@@ -16,7 +16,7 @@
             android:name=".HeaderGabbView"
             android:exported="false" />
         <activity
-            android:name=".gabriel.screen.exampleonboarding.OnBoardingGabbLoginActivity"
+            android:name=".gabriel.screen.login.OnBoardingGabbLoginActivity"
             android:exported="true"
             android:label="@string/title_activity_on_boarding_gabb_login"
             android:theme="@style/Theme.BankSephora.NoActionBar" />

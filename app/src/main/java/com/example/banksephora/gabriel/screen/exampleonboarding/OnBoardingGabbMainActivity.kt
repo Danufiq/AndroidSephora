@@ -6,12 +6,8 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
 import com.example.banksephora.R
-import com.example.banksephora.databinding.ActivityOnBoardingBinding
-import com.example.banksephora.databinding.ActivityOnBoardingGabbLoginBinding
 import com.example.banksephora.databinding.ActivityOnBoardingGabbMainBinding
-import com.example.banksephora.main.screen.onboarding.OnBoardingOneView
-import com.example.banksephora.main.screen.onboarding.OnBoardingThreeView
-import com.example.banksephora.main.screen.onboarding.OnBoardingTwoView
+import com.example.banksephora.gabriel.screen.login.OnBoardingGabbLoginActivity
 
 class OnBoardingGabbMainActivity : AppCompatActivity() {
     private lateinit var binding: ActivityOnBoardingGabbMainBinding

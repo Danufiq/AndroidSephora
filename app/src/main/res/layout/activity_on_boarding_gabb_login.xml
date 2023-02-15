@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".gabriel.screen.exampleonboarding.OnBoardingGabbLoginActivity">
+    tools:context=".gabriel.screen.login.OnBoardingGabbLoginActivity">
 
     <com.example.banksephora.gabriel.share.ui.HeaderGabbView
         android:id="@+id/header"
