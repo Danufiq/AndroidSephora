@@ -18,7 +18,7 @@
             android:id="@+id/judulDialog"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Berhasil"
+            android:text="Gagal!"
             android:textAlignment="center"
             android:textColor="#000000"
             android:textSize="25dp"
@@ -49,27 +49,25 @@
             android:layout_marginTop="150dp"
             android:layout_marginStart="25dp"/>
 
-        <Button
+        <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/cobaLagi"
             android:layout_width="160dp"
-            android:layout_height="wrap_content"
+            android:layout_height="42dp"
             android:layout_marginStart="220dp"
             android:layout_marginTop="220dp"
+            android:background="@drawable/general_bg_button"
+            android:fontFamily="@font/roboto"
             android:text="Coba Lagi"
-            app:cornerRadius="8dp" />
+            android:textColor="@color/white"
+            android:textSize="12dp"/>
 
-        <Button
+        <ImageView
             android:id="@+id/tutup"
             android:layout_width="160dp"
             android:layout_height="wrap_content"
             android:layout_marginStart="20dp"
             android:layout_marginTop="220dp"
-            android:backgroundTint="#FFFFFF"
-            android:text="Tutup"
-            android:textColor="@color/black"
-            app:cornerRadius="7dp"
-            app:strokeColor="#2F82FF"
-            app:strokeWidth="2dp" />
+            android:src="@drawable/btntutup"/>
     </androidx.cardview.widget.CardView>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

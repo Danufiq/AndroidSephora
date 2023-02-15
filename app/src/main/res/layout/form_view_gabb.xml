@@ -4,18 +4,29 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:backgroundTint="#000000"
-    android:foregroundTint="#000000">
+    android:layout_height="48dp">
 
         <androidx.appcompat.widget.AppCompatEditText
             android:id="@+id/ketikUsername"
-            android:layout_width="341dp"
-            android:layout_height="49dp"
-            android:drawableEnd="@drawable/mata"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
             android:hint="Username"
             android:textColorHint="#c1c4c9"
-            app:layout_constraintEnd_toEndOf="parent"
+            android:background="@android:color/transparent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/hidenMata"
             app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/hidenMata"
+            android:layout_width="20dp"
+            android:layout_height="13dp"
+            android:layout_marginTop="19dp"
+            android:layout_marginEnd="26dp"
+            android:layout_marginBottom="16dp"
+            android:src="@drawable/mata"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>

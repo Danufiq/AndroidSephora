@@ -20,8 +20,14 @@ class OnBoardingGabbLoginActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivityOnBoardingGabbLoginBinding.inflate(layoutInflater)
         setContentView(binding.root)
-        binding.username.setHint1("Username")
-        binding.password.setHint2("Password")
+        init()
+    }
+
+    fun init (){
+        binding.username.setHint("Username")
+        binding.username.setTipeInput()
+        binding.password.setHint("Password")
+        binding.password.setTipeInput(true)
         showDialogSukses()
         binding.loginButton.setOnClickListener { showDialogEror() }
     }
