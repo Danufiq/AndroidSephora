@@ -1,4 +1,4 @@
-package com.example.banksephora.uswa.shared.ui
+package com.example.banksephora.main.shared.ui
 
 import android.content.Context
 import android.text.InputType
@@ -9,11 +9,13 @@ import android.view.LayoutInflater
 import android.widget.EditText
 import androidx.constraintlayout.widget.ConstraintLayout
 import com.example.banksephora.R
-import com.example.banksephora.databinding.ItemInputformUswaBinding
+import com.example.banksephora.databinding.ItemGeneralEditTextBinding
 
-class HeaderForm : ConstraintLayout {
+
+class GeneralEditTextView : ConstraintLayout {
+
     private lateinit var mContext: Context
-    private lateinit var binding: ItemInputformUswaBinding
+    private lateinit var binding: ItemGeneralEditTextBinding
 
     var isHiddenPass = false
 
@@ -32,46 +34,35 @@ class HeaderForm : ConstraintLayout {
     private fun init(context: Context, attributeSet: AttributeSet?) {
         mContext = context
 
-        binding = ItemInputformUswaBinding.bind(LayoutInflater.from(mContext).inflate(R.layout.item_inputform_uswa , this, true))
+        binding = ItemGeneralEditTextBinding.bind(LayoutInflater.from(mContext).inflate(R.layout.item_general_edit_text, this, true))
     }
-
-    fun setUsername() {
-        binding.idedit.setText("Username")
-        binding.idimage.setVisibility(GONE);
-    }
-
-    fun setPassword() {
-        binding.idedit.setText("Password")
-        binding.idimage.setVisibility(VISIBLE);
-    }
-
 
     fun setPlaceholder(text:String){
-        binding.idedit.hint = text
+        binding.editText.hint = text
     }
 
     fun setTypePassword(isPassword: Boolean = false ){
         if (isPassword){
-            binding.idedit.setInputType(InputType.TYPE_CLASS_TEXT or InputType.TYPE_TEXT_VARIATION_PASSWORD)
+            binding.editText.setInputType(InputType.TYPE_CLASS_TEXT or InputType.TYPE_TEXT_VARIATION_PASSWORD)
 
             //binding.editText.inputType = InputType.TYPE_TEXT_VARIATION_PASSWORD
-            binding.idimage.setOnClickListener{
+            binding.imgView.setOnClickListener{
                 if (isHiddenPass) {
-                    binding.idedit.transformationMethod = HideReturnsTransformationMethod.getInstance()
+                    binding.editText.transformationMethod = HideReturnsTransformationMethod.getInstance()
                     isHiddenPass = false
-                    binding.idimage.setImageDrawable(resources.getDrawable(R.drawable.ic_eye))
+                    binding.imgView.setImageDrawable(resources.getDrawable(R.drawable.ic_eye))
                 }else {
-                    binding.idedit.transformationMethod = PasswordTransformationMethod.getInstance()
+                    binding.editText.transformationMethod = PasswordTransformationMethod.getInstance()
                     isHiddenPass = true
-                    binding.idimage.setImageDrawable(resources.getDrawable(R.drawable.ic_eye))
+                    binding.imgView.setImageDrawable(resources.getDrawable(R.drawable.ic_eye))
                 }
             }
         }else{
-            binding.idimage.visibility = GONE
+            binding.imgView.visibility = GONE
         }
     }
 
     fun getEditText() : EditText {
-        return binding.idedit
+        return binding.editText
     }
 }

@@ -113,7 +113,7 @@
            <com.example.banksephora.uswa.shared.ui.HeaderForm
                android:id="@+id/editPassword"
                android:layout_width="305dp"
-               android:layout_height="48dp"
+               android:layout_height="50dp"
                android:text="@string/pwdlogin"
                android:textColor="@color/text_content1.2"
                android:layout_marginTop="93dp"

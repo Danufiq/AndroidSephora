@@ -10,7 +10,6 @@
         android:id="@+id/idedit"
         android:layout_width="305dp"
         android:layout_height="40dp"
-        android:text="@string/usernamelogin"
         android:textColor="@color/text_content1.2"
         android:layout_marginTop="25dp"
         android:padding="10dp"
