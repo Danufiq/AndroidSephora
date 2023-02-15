@@ -7,6 +7,8 @@ import android.text.method.PasswordTransformationMethod
 import android.util.AttributeSet
 import android.view.LayoutInflater
 import android.widget.EditText
+import android.widget.ImageButton
+import android.widget.ImageView
 import androidx.constraintlayout.widget.ConstraintLayout
 import com.example.banksephora.R
 import com.example.banksephora.databinding.ItemGeneralEditTextBinding
@@ -65,4 +67,9 @@ class GeneralEditTextView : ConstraintLayout {
     fun getEditText() : EditText {
         return binding.editText
     }
+
+    fun getImage() : ImageView {
+        return binding.imgView
+    }
+
 }

@@ -7,4 +7,5 @@ interface LoginInterface: BaseView {
     fun onSuccessLogin()
 
     fun onFailedLogin(message: String)
+
 }
