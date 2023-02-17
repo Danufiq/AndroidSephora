@@ -4,6 +4,7 @@ import android.content.Context
 import android.util.Log
 import com.example.banksephora.main.shared.constant.BaseURL
 import com.example.banksephora.main.shared.constant.Endpoint
+import com.google.gson.Gson
 import okhttp3.*
 import okhttp3.RequestBody.Companion.toRequestBody
 import org.json.JSONObject
@@ -26,9 +27,13 @@ class APIClient(val context: Context) {
             }
 
             override fun onResponse(call: Call, response: Response) {
-                delegateAPIRequest.onCallSuccess("${response.body?.string()}")
+                 delegateAPIRequest.onCallSuccess("${response.body?.string()}")
             }
         })
     }
 
 }
+
+
+
+
