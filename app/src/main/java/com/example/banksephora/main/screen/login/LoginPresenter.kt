@@ -6,6 +6,7 @@ import android.os.Looper
 import android.util.Log
 import android.widget.Toast
 import com.example.banksephora.main.model.networking.API
+import com.example.banksephora.main.model.networking.User
 import com.example.banksephora.main.shared.base.BasePresenter
 import com.example.banksephora.main.shared.constant.BaseURL
 import com.example.banksephora.main.shared.constant.Endpoint
@@ -39,21 +40,21 @@ class LoginPresenter (private val context: Context) : BasePresenter<LoginInterfa
 //            view?.onFailedLogin("username atau password tidak boleh kosong")
 //            return
 //        }
-        API?.restLogin { response ->
+        API?.restLogin { user ->
             val mainHandler = Handler(Looper.getMainLooper())
             mainHandler.post {
-                Log.d("presenter", " cek response => ${response}")
-                validationLogin(response)
+                Log.d("presenter", " cek response => ${user}")
+                validationLogin(user)
             }
         }
     }
 
-    fun validationLogin(response: String){
-//        if (response == "user1" && password == "pass1"){
-//            view?.onSuccessLogin()
-//        }else{
-//            view?.onFailedLogin("username atau password yang anda masukkan salah")
-//        }
+    fun validationLogin(user: User){
+        if (user.username == "userTest" && user.password == "usertest123"){
+            view?.onSuccessLogin()
+        }else{
+            view?.onFailedLogin("username atau password yang anda masukkan salah")
+        }
     }
 
 }
