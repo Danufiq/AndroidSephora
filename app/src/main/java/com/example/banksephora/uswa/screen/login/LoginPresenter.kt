@@ -4,9 +4,8 @@ import android.content.Context
 import android.os.Handler
 import android.os.Looper
 import android.util.Log
-import com.example.banksephora.main.model.networking.API
-import com.example.banksephora.uswa.model.API_uswa
-import com.example.banksephora.uswa.screen.login.LoginInterface
+import com.example.banksephora.uswa.model.user_uswa
+import com.example.banksephora.uswa.model.networking.API_uswa
 import com.example.banksephora.uswa.shared.base.BasePresenter
 
 class LoginPresenter (private val context: Context) : BasePresenter<LoginInterface> {
@@ -47,20 +46,25 @@ class LoginPresenter (private val context: Context) : BasePresenter<LoginInterfa
 //            view?.onFailedLogin("username atau password tidak boleh kosong")
 //            return
 //        }
-        API?.restLogin { response ->
+        API?.restLogin {  user  ->
             val mainHandler = Handler(Looper.getMainLooper())
             mainHandler.post {
-                Log.d("presenter", " cek response => ${response}")
-                validationLogin(response)
+                Log.d("presenter", " cek response => ${user}")
+                //validationLogin(user)
+                if (user.username == "${username}" && user.password == "${password}"){
+                    view?.onSuccessLogin()
+                }else{
+                    view?.onFailedLogin("username atau password yang anda masukkan salah")
+                }
             }
         }
     }
 
-    fun validationLogin(response: String){
-//        if (response == "user1" && password == "pass1"){
-//            view?.onSuccessLogin()
-//        }else{
-//            view?.onFailedLogin("username atau password yang anda masukkan salah")
-//        }
+    fun validationLogin(user: user_uswa ){
+        if (user.username == "Dodit" && user.password == "Dodit 123"){
+            view?.onSuccessLogin()
+        }else{
+            view?.onFailedLogin("username atau password yang anda masukkan salah")
+        }
     }
 }
