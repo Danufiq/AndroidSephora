@@ -4,6 +4,7 @@ import android.content.Context
 import android.os.HandlerThread
 import android.os.Looper
 import android.util.Log
+import com.example.banksephora.gabriel.model.User
 import com.example.banksephora.gabriel.model.networking.APIGabb
 import com.example.banksephora.gabriel.share.base.BasePresenterGabb
 import java.util.logging.Handler
@@ -37,13 +38,19 @@ class LoginPresenterGabb (private val context: Context) : BasePresenterGabb<Logi
 //            view?.gagalLogin("username atau password yang anda masukkan salah")
 //        }
 
-        API?.restLogin { response ->
+        API?.restLogin { user ->
             val mainHandler = android.os.Handler(Looper.getMainLooper())
             mainHandler.post{
-                Log.d("[PRESENTER]", "Cek response => ${response}")
+                Log.d("[PRESENTER]", "Cek response => ${user}")
+                validasiLogin (user)
             }
         }
-
     }
-
+    fun validasiLogin(user: User){
+        if (user.username == "userTest" && user.password == "usertest123"){
+            view?.berhasilLogin()
+        } else{
+            view?.gagalLogin("Username atau Password yang Anda masukan salah")
+        }
+    }
 }
