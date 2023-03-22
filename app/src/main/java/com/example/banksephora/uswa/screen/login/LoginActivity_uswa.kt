@@ -48,6 +48,7 @@ class LoginActivity_uswa : AppCompatActivity() , LoginInterface {
         showDialog("Selamat! Akun Anda telah berhasil \n" +
                 "terdaftar di akun Sephora Banking. \n" +
                 "Silakan menikmati semua fitur Sephora Banking.")
+
     }
 
     override fun onFailedLogin(message: String) {

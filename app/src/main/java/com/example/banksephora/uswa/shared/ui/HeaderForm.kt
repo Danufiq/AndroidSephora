@@ -11,6 +11,7 @@ import androidx.constraintlayout.widget.ConstraintLayout
 import com.example.banksephora.R
 import com.example.banksephora.databinding.ItemInputformUswaBinding
 
+
 class HeaderForm : ConstraintLayout {
     private lateinit var mContext: Context
     private lateinit var binding: ItemInputformUswaBinding
